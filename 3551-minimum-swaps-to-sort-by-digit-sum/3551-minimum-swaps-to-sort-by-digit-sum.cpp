@@ -1,44 +1,32 @@
 class Solution {
 public:
-    struct num
-    {
-        int n, sum, idx;
-    };
-
     int minSwaps(vector<int>& nums) {
-        vector<num> nums_2;
+        vector<pair<pair<int, int>, int>> nums_2;
 
         for(int i = 0; i < nums.size(); i++){
-            string n_str = to_string(nums[i]);
-
             int n_sum = 0;
 
-            for(char c: n_str) n_sum += c - '0';
+            for(char c: to_string(nums[i])) n_sum += c - '0';
 
-            nums_2.push_back({ nums[i], n_sum, i });
+            nums_2.push_back({ { n_sum, nums[i] }, i });
         }
 
-        sort(nums_2.begin(), nums_2.end(), [&](num &a, num &b){
-            if(a.sum == b.sum) return a.n < b.n;
-            else return a.sum < b.sum;
-        });
+        sort(nums_2.begin(), nums_2.end());
 
         int res = 0;
 
-        bool visited[100'000] = { false, };
-
         for(int i = 0; i < nums.size(); i++){
-            if(!visited[i]){
-                int cur = i, cnt = 0;
+            if(nums[i]){
+                int cur = i;
 
-                while(!visited[cur]){
-                    visited[cur] = true;
-                    cnt++;
-                    
-                    cur = nums_2[cur].idx;
+                while(nums[cur]){
+                    nums[cur] = 0;
+                    res++;
+
+                    cur = nums_2[cur].second;
                 }
 
-                res += cnt - 1;
+                res--;
             }
         }
 
