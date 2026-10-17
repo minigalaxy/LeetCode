@@ -18,7 +18,7 @@ public:
             nums_2[i] = { nums[i], n_sum, i };
         }
 
-        sort(nums_2, nums_2 + n_size, [&](Num &a, Num &b){
+        sort(nums_2, nums_2 + n_size, [&](const Num &a, const Num &b){
             if(a.sum == b.sum) return a.n < b.n;
             else return a.sum < b.sum;
         });
@@ -26,10 +26,17 @@ public:
         int res = 0;
 
         for(int i = 0; i < n_size; i++){
-            while(nums_2[i].idx != i){
-                res++;
+            if(nums[i]){
+                int cur = i;
 
-                swap(nums_2[i], nums_2[nums_2[i].idx]);
+                while(nums[cur]){
+                    nums[cur] = 0;
+                    res++;
+
+                    cur = nums_2[cur].idx;
+                }
+
+                res--;
             }
         }
 
