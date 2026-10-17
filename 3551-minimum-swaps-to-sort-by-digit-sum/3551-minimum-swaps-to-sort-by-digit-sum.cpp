@@ -18,7 +18,7 @@ public:
             nums_2[i] = { nums[i], n_sum, i };
         }
 
-        sort(nums_2, nums_2 + n_size, [&](const Num &a, const Num &b){
+        sort(nums_2, nums_2 + n_size, [&](Num &a, Num &b){
             if(a.sum == b.sum) return a.n < b.n;
             else return a.sum < b.sum;
         });
