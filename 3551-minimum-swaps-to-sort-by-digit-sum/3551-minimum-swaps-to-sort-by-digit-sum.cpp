@@ -23,20 +23,22 @@ public:
             else return a.sum < b.sum;
         });
 
-        int indices[100'000];
-
-        for(int i = 0; i < nums.size(); i++) indices[nums_2[i].idx] = i;
-
         int res = 0;
 
+        bool visited[100'000] = { false, };
+
         for(int i = 0; i < nums.size(); i++){
-            if(nums_2[i].idx != i){
-                res++;
+            if(!visited[i]){
+                int cur = i, cnt = 0;
 
-                indices[nums_2[i].idx] = indices[i];
-                swap(nums_2[i], nums_2[indices[i]]);
+                while(!visited[cur]){
+                    visited[cur] = true;
+                    cnt++;
+                    
+                    cur = nums_2[cur].idx;
+                }
 
-                cout << '\n';
+                res += cnt - 1;
             }
         }
 
