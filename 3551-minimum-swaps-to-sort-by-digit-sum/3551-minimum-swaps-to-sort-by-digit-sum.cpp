@@ -1,6 +1,6 @@
 class Solution {
 public:
-    struct Num
+    struct num
     {
         int n, sum, idx;
     };
@@ -8,7 +8,7 @@ public:
     int minSwaps(vector<int>& nums) {
         int n_size = nums.size();
 
-        Num nums_2[100'000];
+        num nums_2[100'000];
 
         for(int i = 0; i < n_size; i++){
             int n_sum = 0;
@@ -18,7 +18,7 @@ public:
             nums_2[i] = { nums[i], n_sum, i };
         }
 
-        sort(nums_2, nums_2 + n_size, [&](Num &a, Num &b){
+        sort(nums_2, nums_2 + n_size, [&](num &a, num &b){
             if(a.sum == b.sum) return a.n < b.n;
             else return a.sum < b.sum;
         });
