@@ -1,21 +1,23 @@
 class Solution {
 public:
     int minSwaps(vector<int>& nums) {
-        vector<pair<pair<int, int>, int>> nums_2;
+        int n_size = nums.size();
 
-        for(int i = 0; i < nums.size(); i++){
+        pair<pair<int, int>, int> nums_2[100'000];
+
+        for(int i = 0; i < n_size; i++){
             int n_sum = 0;
 
             for(char c: to_string(nums[i])) n_sum += c - '0';
 
-            nums_2.push_back({ { n_sum, nums[i] }, i });
+            nums_2[i] = { { n_sum, nums[i] }, i };
         }
 
-        sort(nums_2.begin(), nums_2.end());
+        sort(nums_2, nums_2 + n_size);
 
         int res = 0;
 
-        for(int i = 0; i < nums.size(); i++){
+        for(int i = 0; i < n_size; i++){
             if(nums[i]){
                 int cur = i;
 
