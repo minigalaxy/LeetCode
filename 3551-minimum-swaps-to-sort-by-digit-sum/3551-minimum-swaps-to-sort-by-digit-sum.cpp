@@ -1,42 +1,37 @@
 class Solution {
 public:
-    struct num
-    {
+    struct Num {
         int n, sum, idx;
     };
 
     int minSwaps(vector<int>& nums) {
-        int n_size = nums.size();
+        int n = nums.size();
+        Num arr[100'000];
 
-        num nums_2[100'000];
+        for (int i = 0; i < n; ++i) {
+            int x = nums[i], sum = 0;
 
-        for(int i = 0; i < n_size; i++){
-            int n_sum = 0;
+            while (x > 0) {
+                sum += x % 10;
+                x /= 10;
+            }
 
-            for(int t = nums[i]; t > 0; t /= 10) n_sum += t % 10;
-
-            nums_2[i] = { nums[i], n_sum, i };
+            arr[i] = {nums[i], sum, i};
         }
 
-        sort(nums_2, nums_2 + n_size, [&](num &a, num &b){
-            if(a.sum == b.sum) return a.n < b.n;
-            else return a.sum < b.sum;
+        sort(arr, arr + n, [](const Num& a, const Num& b) {
+            if (a.sum != b.sum)
+                return a.sum < b.sum;
+            return a.n < b.n;
         });
 
         int res = 0;
 
-        for(int i = 0; i < n_size; i++){
-            if(nums[i]){
-                int cur = i;
-
-                while(nums[cur]){
-                    nums[cur] = 0;
-                    res++;
-
-                    cur = nums_2[cur].idx;
-                }
-
-                res--;
+        for (int i = 0; i < n; ++i) {
+            while (arr[i].idx != i) {
+                int j = arr[i].idx;
+                swap(arr[i], arr[j]);
+                ++res;
             }
         }
 
