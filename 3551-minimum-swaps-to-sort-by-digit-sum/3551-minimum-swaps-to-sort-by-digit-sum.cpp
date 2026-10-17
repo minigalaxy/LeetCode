@@ -1,9 +1,10 @@
 class Solution {
 public:
     int minSwaps(vector<int>& nums) {
+        int N = nums.size();
         vector<pair<pair<int, int>, int>> nums_2;
 
-        for(int i = 0; i < nums.size(); i++){
+        for(int i = 0; i < N; i++){
             int n_sum = 0;
 
             for(char c: to_string(nums[i])) n_sum += c - '0';
@@ -15,7 +16,7 @@ public:
 
         int res = 0;
 
-        for(int i = 0; i < nums.size(); i++){
+        for(int i = 0; i < N; i++){
             if(nums[i]){
                 int cur = i;
 
