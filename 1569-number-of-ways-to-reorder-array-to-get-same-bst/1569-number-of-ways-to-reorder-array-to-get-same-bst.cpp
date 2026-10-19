@@ -56,13 +56,6 @@ public:
             else if(right) return sum = right->get_sum();
             else return sum = 1LL;
         }
-
-        void print_info(){
-            cout << val << ' ' << sum << ' ' << len << '\n';
-
-            if(left) left->print_info();
-            if(right) right->print_info();
-        }
     };
 
     int numOfWays(vector<int>& nums) {
@@ -84,7 +77,5 @@ public:
         root->init_len();
 
         return root->get_sum() - 1;
-
-        return 0;
     }
 };
