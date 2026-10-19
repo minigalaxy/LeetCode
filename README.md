@@ -8,6 +8,7 @@ This is my LeetCode.
 | ------- |
 | [0001-two-sum](https://github.com/minigalaxy/LeetCode/tree/master/0001-two-sum) |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/minigalaxy/LeetCode/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
+| [2089-find-target-indices-after-sorting-array](https://github.com/minigalaxy/LeetCode/tree/master/2089-find-target-indices-after-sorting-array) |
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/minigalaxy/LeetCode/tree/master/3551-minimum-swaps-to-sort-by-digit-sum) |
 ## Hash Table
 |  |
@@ -17,6 +18,7 @@ This is my LeetCode.
 ## Sorting
 |  |
 | ------- |
+| [2089-find-target-indices-after-sorting-array](https://github.com/minigalaxy/LeetCode/tree/master/2089-find-target-indices-after-sorting-array) |
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/minigalaxy/LeetCode/tree/master/3551-minimum-swaps-to-sort-by-digit-sum) |
 ## Math
 |  |
@@ -42,6 +44,7 @@ This is my LeetCode.
 |  |
 | ------- |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/minigalaxy/LeetCode/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
+| [2089-find-target-indices-after-sorting-array](https://github.com/minigalaxy/LeetCode/tree/master/2089-find-target-indices-after-sorting-array) |
 ## Memoization
 |  |
 | ------- |
