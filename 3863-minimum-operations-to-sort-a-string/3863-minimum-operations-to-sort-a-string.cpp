@@ -1,11 +1,7 @@
 class Solution {
 public:
     int minOperations(string s) {
-        string sorted_s = s;
-
-        sort(sorted_s.begin(), sorted_s.end());
-
-        if(s == sorted_s) return 0;
+        if(is_sorted(s.begin(), s.end())) return 0;
         else {
             if(s.size() == 2) return -1;
 
