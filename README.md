@@ -77,4 +77,8 @@ This is my LeetCode.
 |  |
 | ------- |
 | [3886-sum-of-sortable-integers](https://github.com/minigalaxy/LeetCode/tree/master/3886-sum-of-sortable-integers) |
+## String
+|  |
+| ------- |
+| [3863-minimum-operations-to-sort-a-string](https://github.com/minigalaxy/LeetCode/tree/master/3863-minimum-operations-to-sort-a-string) |
 <!---LeetCode Topics End-->
