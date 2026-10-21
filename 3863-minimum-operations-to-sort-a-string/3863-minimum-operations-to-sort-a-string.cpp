@@ -5,15 +5,11 @@ public:
         else {
             if(s.size() == 2) return -1;
 
-            auto min_it = s.begin(), max_it = s.begin();
+            int min_idx = min_element(s.begin(), s.end()) - s.begin();
+            int max_idx = max_element(s.rbegin(), s.rend()) - s.rbegin();
 
-            for(auto it = s.begin(); it != s.end(); it++){
-                if(*it < *min_it) min_it = it;
-                if(*it >= *max_it) max_it = it;
-            }
-
-            if(min_it == s.begin() || max_it == s.begin() + s.size() - 1) return 1;
-            else if(min_it == s.begin() + s.size() - 1 && max_it == s.begin()) return 3;
+            if(min_idx == 0 || max_idx == 0) return 1;
+            else if(min_idx == s.size() - 1 && max_idx == s.size() - 1) return 3;
             else return 2;
         }
     }
