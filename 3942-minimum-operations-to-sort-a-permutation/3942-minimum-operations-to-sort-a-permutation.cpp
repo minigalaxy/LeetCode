@@ -12,9 +12,9 @@ public:
         if(nums.back() < nums.front()) asc++, asc_idx = N - 1;
         else desc++, desc_idx = N - 1;
 
-        if(is_sorted(nums.begin(), nums.end())) return 0;
-        else if(asc == 1) return min(asc_idx + 2, N - 1 - asc_idx + 1);
-        else if(desc == 1) return min(desc_idx + 1, N - 1 - desc_idx + 2);
+        if(N == 2) return nums.front() > nums.back();
+        else if(asc == 1) return ((asc_idx == N - 1) ? 1 : min(asc_idx + 2, N - 1 - asc_idx + 1));
+        else if(desc == 1) return ((desc_idx == N - 1) ? 0 : min(desc_idx + 1, N - 1 - desc_idx + 2));
         else return -1;
     }
 };
