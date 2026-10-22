@@ -11,6 +11,7 @@ This is my LeetCode.
 | [2089-find-target-indices-after-sorting-array](https://github.com/minigalaxy/LeetCode/tree/master/2089-find-target-indices-after-sorting-array) |
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/minigalaxy/LeetCode/tree/master/3551-minimum-swaps-to-sort-by-digit-sum) |
 | [3886-sum-of-sortable-integers](https://github.com/minigalaxy/LeetCode/tree/master/3886-sum-of-sortable-integers) |
+| [3942-minimum-operations-to-sort-a-permutation](https://github.com/minigalaxy/LeetCode/tree/master/3942-minimum-operations-to-sort-a-permutation) |
 ## Hash Table
 |  |
 | ------- |
