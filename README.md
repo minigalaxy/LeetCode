@@ -10,6 +10,7 @@ This is my LeetCode.
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/minigalaxy/LeetCode/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
 | [2089-find-target-indices-after-sorting-array](https://github.com/minigalaxy/LeetCode/tree/master/2089-find-target-indices-after-sorting-array) |
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/minigalaxy/LeetCode/tree/master/3551-minimum-swaps-to-sort-by-digit-sum) |
+| [3644-maximum-k-to-sort-a-permutation](https://github.com/minigalaxy/LeetCode/tree/master/3644-maximum-k-to-sort-a-permutation) |
 | [3886-sum-of-sortable-integers](https://github.com/minigalaxy/LeetCode/tree/master/3886-sum-of-sortable-integers) |
 | [3942-minimum-operations-to-sort-a-permutation](https://github.com/minigalaxy/LeetCode/tree/master/3942-minimum-operations-to-sort-a-permutation) |
 ## Hash Table
@@ -82,4 +83,8 @@ This is my LeetCode.
 |  |
 | ------- |
 | [3863-minimum-operations-to-sort-a-string](https://github.com/minigalaxy/LeetCode/tree/master/3863-minimum-operations-to-sort-a-string) |
+## Bit Manipulation
+|  |
+| ------- |
+| [3644-maximum-k-to-sort-a-permutation](https://github.com/minigalaxy/LeetCode/tree/master/3644-maximum-k-to-sort-a-permutation) |
 <!---LeetCode Topics End-->
