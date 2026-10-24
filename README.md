@@ -29,6 +29,7 @@ This is my LeetCode.
 | ------- |
 | [0002-add-two-numbers](https://github.com/minigalaxy/LeetCode/tree/master/0002-add-two-numbers) |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/minigalaxy/LeetCode/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
+| [2409-count-days-spent-together](https://github.com/minigalaxy/LeetCode/tree/master/2409-count-days-spent-together) |
 | [3886-sum-of-sortable-integers](https://github.com/minigalaxy/LeetCode/tree/master/3886-sum-of-sortable-integers) |
 ## Divide and Conquer
 |  |
@@ -82,6 +83,7 @@ This is my LeetCode.
 ## String
 |  |
 | ------- |
+| [2409-count-days-spent-together](https://github.com/minigalaxy/LeetCode/tree/master/2409-count-days-spent-together) |
 | [3863-minimum-operations-to-sort-a-string](https://github.com/minigalaxy/LeetCode/tree/master/3863-minimum-operations-to-sort-a-string) |
 ## Bit Manipulation
 |  |
