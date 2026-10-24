@@ -6,7 +6,7 @@ struct Date
 
     Date(string d) : M(stoi(d.substr(0, 2))), D(stoi(d.substr(3, 2))) {}
 
-    short operator-(const Date& other) const {
+    int operator-(const Date& other) const {
         return accumulate(days, days + M - 1, D) - accumulate(days, days + other.M - 1, other.D) + 1;
     }
 
