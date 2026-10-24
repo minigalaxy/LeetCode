@@ -1,10 +1,10 @@
-short days[12] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+int days[12] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
 struct Date
 {
-    short M, D;
+    int M, D;
 
-    Date(string& d) : M(stoi(d.substr(0, 2))), D(stoi(d.substr(3, 2))) {}
+    Date(string d) : M(stoi(d.substr(0, 2))), D(stoi(d.substr(3, 2))) {}
 
     short operator-(const Date& other) const {
         return accumulate(days, days + M - 1, D) - accumulate(days, days + other.M - 1, other.D) + 1;
