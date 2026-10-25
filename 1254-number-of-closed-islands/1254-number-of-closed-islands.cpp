@@ -37,11 +37,6 @@ public:
             }
         }
 
-        for(int i = 0; i < n; i++){
-            for(int j = 0; j < m; j++) cout << island[i][j] << ' ';
-            cout << '\n';
-        }
-
         return count(is_opened + 1, is_opened + cnt + 1, false);
     }
 };
