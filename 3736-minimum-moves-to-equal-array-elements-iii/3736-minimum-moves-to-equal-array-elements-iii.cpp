@@ -2,7 +2,9 @@ class Solution {
 public:
     short minMoves(vector<int>& nums) {
         short res = 0;
-        char m = *max_element(nums.begin(), nums.end());
+        char m = 0;
+
+        for(char n: nums) m = max(m, n);
 
         for(char n: nums) res += m - n;
 
