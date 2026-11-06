@@ -1,40 +1,35 @@
 class Solution {
 public:
     vector<int> countServers(int n, vector<vector<int>>& logs, int x, vector<int>& queries) {
-        vector<pair<int, int>> sorted_log;
+        sort(logs.begin(), logs.end(), [](vector<int> &a, vector<int> &b){
+            return (a[1] < b[1]);
+        });
 
-        for(int i = 0; i < logs.size(); i++) sorted_log.push_back({ logs[i][1], logs[i][0] });
+        int order[100'000];
 
-        sort(sorted_log.begin(), sorted_log.end());
+        for(int i = 0; i < queries.size(); i++) order[i] = i;
 
-        queue<pair<int, int>> req;
-        for(pair<int, int> p: sorted_log) req.push(p);
+        sort(order, order + queries.size(), [&](int a, int b){
+            return queries[a] < queries[b];
+        });
 
-        queue<pair<int, int>> cur;
+        int l = 0, r = 0;
         int cnt[100'001] = { 0, };
+        int cur = 0;
 
-        int arr[1'000'001] = { 0, };
+        vector<int> res(queries.size());
 
-        for(int i = req.front().first; (!cur.empty() || !req.empty()) && i <= 1'000'000; i++){
-            arr[i] = arr[i - 1];
+        for(int i = 0; i < queries.size(); i++){
+            int query = queries[order[i]];
 
-            if(i > x){
-                while(!cur.empty() && i - x - 1 == cur.front().first){
-                    if(--cnt[cur.front().second] == 0) arr[i]--;
-                    cur.pop();
-                }
-            }
+            while(r < logs.size() && logs[r][1] <= query)
+                if(cnt[logs[r++][0]]++ == 0) cur++;
 
-            while(!req.empty() && i == req.front().first){
-                if(cnt[req.front().second]++ == 0) arr[i]++;
-                cur.push(req.front());
-                req.pop();
-            }
+            while(l < r && logs[l][1] < query - x)
+                if(--cnt[logs[l++][0]] == 0) cur--;
+
+            res[order[i]] = n - cur;
         }
-
-        vector<int> res;
-
-        for(int query: queries) res.push_back(n - arr[query]);
 
         return res;
     }
