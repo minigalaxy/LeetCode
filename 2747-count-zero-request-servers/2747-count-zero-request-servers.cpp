@@ -1,9 +1,9 @@
 class Solution {
 public:
     vector<int> countServers(int n, vector<vector<int>>& logs, int x, vector<int>& queries) {
-        sort(logs.begin(), logs.end(), [](vector<int> &a, vector<int> &b){
-            return (a[1] < b[1]);
-        });
+        pair<int, int> req[100'000];
+        for(int i = 0; i < logs.size(); i++) req[i] = { logs[i][1], logs[i][0] };
+        sort(req, req + logs.size());
 
         int order[100'000];
 
@@ -22,11 +22,11 @@ public:
         for(int i = 0; i < queries.size(); i++){
             int query = queries[order[i]];
 
-            while(r < logs.size() && logs[r][1] <= query)
-                if(cnt[logs[r++][0]]++ == 0) cur++;
+            while(r < logs.size() && req[r].first <= query)
+                if(cnt[req[r++].second]++ == 0) cur++;
 
-            while(l < r && logs[l][1] < query - x)
-                if(--cnt[logs[l++][0]] == 0) cur--;
+            while(l < r && req[l].first < query - x)
+                if(--cnt[req[l++].second] == 0) cur--;
 
             res[order[i]] = n - cur;
         }
