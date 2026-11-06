@@ -13,6 +13,7 @@ This is my LeetCode.
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/minigalaxy/LeetCode/tree/master/1385-find-the-distance-value-between-two-arrays) |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/minigalaxy/LeetCode/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
 | [2089-find-target-indices-after-sorting-array](https://github.com/minigalaxy/LeetCode/tree/master/2089-find-target-indices-after-sorting-array) |
+| [2747-count-zero-request-servers](https://github.com/minigalaxy/LeetCode/tree/master/2747-count-zero-request-servers) |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/minigalaxy/LeetCode/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/minigalaxy/LeetCode/tree/master/3551-minimum-swaps-to-sort-by-digit-sum) |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/minigalaxy/LeetCode/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
@@ -26,6 +27,7 @@ This is my LeetCode.
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/minigalaxy/LeetCode/tree/master/0001-two-sum) |
+| [2747-count-zero-request-servers](https://github.com/minigalaxy/LeetCode/tree/master/2747-count-zero-request-servers) |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/minigalaxy/LeetCode/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/minigalaxy/LeetCode/tree/master/3551-minimum-swaps-to-sort-by-digit-sum) |
 ## Sorting
@@ -34,6 +36,7 @@ This is my LeetCode.
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/minigalaxy/LeetCode/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/minigalaxy/LeetCode/tree/master/1385-find-the-distance-value-between-two-arrays) |
 | [2089-find-target-indices-after-sorting-array](https://github.com/minigalaxy/LeetCode/tree/master/2089-find-target-indices-after-sorting-array) |
+| [2747-count-zero-request-servers](https://github.com/minigalaxy/LeetCode/tree/master/2747-count-zero-request-servers) |
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/minigalaxy/LeetCode/tree/master/3551-minimum-swaps-to-sort-by-digit-sum) |
 | [3886-sum-of-sortable-integers](https://github.com/minigalaxy/LeetCode/tree/master/3886-sum-of-sortable-integers) |
 ## Math
@@ -150,5 +153,6 @@ This is my LeetCode.
 ## Sliding Window
 |  |
 | ------- |
+| [2747-count-zero-request-servers](https://github.com/minigalaxy/LeetCode/tree/master/2747-count-zero-request-servers) |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/minigalaxy/LeetCode/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
 <!---LeetCode Topics End-->
