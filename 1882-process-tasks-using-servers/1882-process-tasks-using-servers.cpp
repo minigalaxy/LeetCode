@@ -8,9 +8,12 @@ public:
 
         priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> busy;
 
-        vector<int> res;
+        vector<int> res(m);
 
-        for(long long i = 0, time = 0; i < m; time++){
+        int i = 0;
+        long long time = 0;
+        
+        while(i < m){
             if(free.empty()) time = busy.top().first;
 
             while(!busy.empty() && busy.top().first <= time){
@@ -19,11 +22,13 @@ public:
             }
             
             while(!free.empty() && i < m && i <= time){
-                res.push_back(free.top().second);
+                res[i] = free.top().second;
             
                 busy.push({ time + tasks[i++], free.top().second });
                 free.pop();
             }
+
+            time++;
         }
 
         return res;
