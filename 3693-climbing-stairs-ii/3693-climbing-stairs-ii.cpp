@@ -1,7 +1,8 @@
 class Solution {
 public:
     int climbStairs(int n, vector<int>& costs) {
-        int total[100'001] = { 0, };
+        int total[100'001];
+        total[0] = 0;
         fill(total + 1, total + n + 1, 1'010'000'000);
 
         for(int i = 0; i < n; i++)
