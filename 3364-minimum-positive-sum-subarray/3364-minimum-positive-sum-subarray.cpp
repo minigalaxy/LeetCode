@@ -5,7 +5,7 @@ public:
 
         for(int i = 0; i < nums.size(); i++) prefix_sum[i + 1] = prefix_sum[i] + nums[i];
 
-        int res = 100'000;
+        int res = 100'001;
 
         for(int i = l; i <= r; i++){
             for(int j = 0; j + i - 1 < nums.size(); j++){
@@ -15,7 +15,7 @@ public:
             }
         }
 
-        if(res == 100'000) res = -1;
+        if(res == 100'001) res = -1;
 
         return res;
     }
