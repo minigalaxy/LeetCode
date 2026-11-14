@@ -19,6 +19,7 @@ This is my LeetCode.
 | [2747-count-zero-request-servers](https://github.com/minigalaxy/LeetCode/tree/master/2747-count-zero-request-servers) |
 | [3105-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/minigalaxy/LeetCode/tree/master/3105-longest-strictly-increasing-or-strictly-decreasing-subarray) |
 | [3364-minimum-positive-sum-subarray](https://github.com/minigalaxy/LeetCode/tree/master/3364-minimum-positive-sum-subarray) |
+| [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/minigalaxy/LeetCode/tree/master/3420-count-non-decreasing-subarrays-after-k-operations) |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/minigalaxy/LeetCode/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/minigalaxy/LeetCode/tree/master/3551-minimum-swaps-to-sort-by-digit-sum) |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/minigalaxy/LeetCode/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
@@ -169,6 +170,7 @@ This is my LeetCode.
 | ------- |
 | [2747-count-zero-request-servers](https://github.com/minigalaxy/LeetCode/tree/master/2747-count-zero-request-servers) |
 | [3364-minimum-positive-sum-subarray](https://github.com/minigalaxy/LeetCode/tree/master/3364-minimum-positive-sum-subarray) |
+| [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/minigalaxy/LeetCode/tree/master/3420-count-non-decreasing-subarrays-after-k-operations) |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/minigalaxy/LeetCode/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
 ## Counting
 |  |
@@ -190,4 +192,24 @@ This is my LeetCode.
 |  |
 | ------- |
 | [3364-minimum-positive-sum-subarray](https://github.com/minigalaxy/LeetCode/tree/master/3364-minimum-positive-sum-subarray) |
+## Stack
+|  |
+| ------- |
+| [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/minigalaxy/LeetCode/tree/master/3420-count-non-decreasing-subarrays-after-k-operations) |
+## Segment Tree
+|  |
+| ------- |
+| [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/minigalaxy/LeetCode/tree/master/3420-count-non-decreasing-subarrays-after-k-operations) |
+## Queue
+|  |
+| ------- |
+| [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/minigalaxy/LeetCode/tree/master/3420-count-non-decreasing-subarrays-after-k-operations) |
+## Monotonic Stack
+|  |
+| ------- |
+| [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/minigalaxy/LeetCode/tree/master/3420-count-non-decreasing-subarrays-after-k-operations) |
+## Monotonic Queue
+|  |
+| ------- |
+| [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/minigalaxy/LeetCode/tree/master/3420-count-non-decreasing-subarrays-after-k-operations) |
 <!---LeetCode Topics End-->
