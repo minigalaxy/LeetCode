@@ -4,12 +4,12 @@ public:
         int odd = 0, even = 0;
         long long res = 0;
 
-        for(int i = 0; i < arr.size(); i++){
+        for(int i = 0; i < arr.size(); ++i){
             if((arr[i] & 1) == 1){
                 swap(odd, even);
-                odd++;
+                ++odd;
             }
-            else even++;
+            else ++even;
 
             res += odd;
         }
