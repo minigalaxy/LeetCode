@@ -4,8 +4,8 @@ public:
         int odd = 0, even = 0;
         long long res = 0;
 
-        for(int i = 1; i <= arr.size(); i++){
-            if((arr[i - 1] & 1) == 1){
+        for(int n: arr){
+            if(n & 1){
                 swap(odd, even);
                 odd++;
             }
@@ -14,6 +14,6 @@ public:
             res += odd;
         }
 
-        return res % (1'000'000'000 + 7);
+        return res % 1'000'000'007;
     }
 };
