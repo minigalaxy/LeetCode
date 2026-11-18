@@ -3,12 +3,8 @@ public:
     int minChanges(string s) {
         int res = 0;
 
-        for(int i = 0, p = -1; i < s.size() - 1; i++){
-            if(s[i] != s[i + 1]){
-                if(((i - p) & 1) == 1) res++, i++;
-                p = i;
-            }
-        }
+        for(int i = 0; i < s.size() - 1; i += 2)
+            if(s[i] != s[i + 1]) res++;
 
         return res;
     }
