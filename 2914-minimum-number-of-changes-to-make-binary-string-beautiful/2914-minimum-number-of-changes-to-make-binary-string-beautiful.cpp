@@ -1,11 +1,6 @@
 class Solution {
 public:
     int minChanges(string s) {
-        int res = 0;
-
-        for(int i = 0; i < s.size(); i += 2)
-            if(s[i] != s[i + 1]) res++;
-
-        return res;
+        return ranges::count_if(s | ranges::views::chunk(2), [](auto c){ return c[0] != c[1]; });
     }
 };
