@@ -3,7 +3,7 @@ public:
     int maxSelectedElements(vector<int>& nums) {
         int nums2[100'000];
 
-        if(nums.size() > 2048){
+        if(nums.size() > 8192){
             int cnt[1'000'000] = { 0, };
             int mx = *max_element(nums.begin(), nums.end()) - 1;
             int mn = *min_element(nums.begin(), nums.end()) - 1;
