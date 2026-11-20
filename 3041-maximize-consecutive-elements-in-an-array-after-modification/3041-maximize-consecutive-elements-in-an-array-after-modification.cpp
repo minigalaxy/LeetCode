@@ -2,9 +2,11 @@ class Solution {
 public:
     int maxSelectedElements(vector<int>& nums) {
         int cnt[1'000'000] = { 0, };
+        int mx = *max_element(nums.begin(), nums.end()) - 1;
+        int mn = *min_element(nums.begin(), nums.end()) - 1;
         
         for(int i = 0; i < nums.size(); i++) cnt[nums[i] - 1]++;
-        for(int i = 1; i < 1'000'000; i++) cnt[i] += cnt[i - 1];
+        for(int i = mn + 1; i <= mx; i++) cnt[i] += cnt[i - 1];
 
         int nums2[100'000];
         
