@@ -2,7 +2,6 @@ class Solution {
 public:
     int maxSelectedElements(vector<int>& nums) {
         sort(nums.begin(), nums.end());
-        cout << '\n';
 
         int res = 1;
 
