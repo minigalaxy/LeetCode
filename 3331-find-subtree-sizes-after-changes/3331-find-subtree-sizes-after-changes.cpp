@@ -1,6 +1,6 @@
 class Solution {
 public:
-    void change(int cur, string &s, vector<int> &closest, vector<vector<int>> &child, vector<int> &parent){
+    void change(int cur, const string &s, vector<int> &closest, const vector<vector<int>> &child, vector<int> &parent){
         if(closest[s[cur] - 'a'] != -1) parent[cur] = closest[s[cur] - 'a'];
 
         int tmp = closest[s[cur] - 'a'];
@@ -11,7 +11,7 @@ public:
         closest[s[cur] - 'a'] = tmp;
     }
 
-    int get_sub(int cur, vector<int> &answer, vector<vector<int>> &child){
+    int get_sub(int cur, vector<int> &answer, const vector<vector<int>> &child){
         for(int c: child[cur]) answer[cur] += get_sub(c, answer, child);
         
         return ++answer[cur];
