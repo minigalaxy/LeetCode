@@ -1,10 +1,9 @@
-int p[40'001];
+int p[40'001] = { 1, };
 int i, z;
 
 class ProductOfNumbers {
 public:
     ProductOfNumbers() {
-        p[0] = 1;
         i = 0;
         z = -1;
     }
