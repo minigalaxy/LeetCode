@@ -8,11 +8,7 @@ public:
     }
     
     void add(int num) {
-        if(num == 0){
-            num = 1;
-            z = i;
-            p[i + 1] = 1;
-        }
+        if(num == 0) z = i;
         else p[i + 1] = num * p[i];
 
         i++;
