@@ -1,21 +1,25 @@
 class ProductOfNumbers {
 public:
-    vector<int> s;
+    int p[40'001];
+    long long i = 0, z = -1;
 
     ProductOfNumbers() {
-        this->s.clear();
+        fill(p, p + 40'001, 1);
     }
     
     void add(int num) {
-        s.push_back(num);
+        if(num == 0){
+            num = 1;
+            z = i;
+            p[i + 1] = 1;
+        }
+        else p[i + 1] = num * p[i];
+
+        i++;
     }
     
     int getProduct(int k) {
-        int ret = 1;
-
-        for(int i = 0; i < k; i++) ret *= s[s.size() - 1 - i];
-
-        return ret;
+        return (z < i - k) ? p[i] / p[i - k] : 0;
     }
 };
 
