@@ -1,10 +1,12 @@
+int p[40'001];
+int i, z;
+
 class ProductOfNumbers {
 public:
-    int p[40'001];
-    int i = 0, z = -1;
-
     ProductOfNumbers() {
         p[0] = 1;
+        i = 0;
+        z = -1;
     }
     
     void add(int num) {
