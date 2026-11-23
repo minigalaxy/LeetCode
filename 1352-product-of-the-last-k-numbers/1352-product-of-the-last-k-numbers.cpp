@@ -1,14 +1,14 @@
 class ProductOfNumbers {
 public:
     int p[40'001];
-    long long i = 0, z = -1;
+    int i = 0, z = -1;
 
     ProductOfNumbers() {
-        fill(p, p + 40'001, 1);
+        p[0] = 1;
     }
     
     void add(int num) {
-        if(num == 0) z = i;
+        if(num == 0) z = i, p[i + 1] = 1;
         else p[i + 1] = num * p[i];
 
         i++;
