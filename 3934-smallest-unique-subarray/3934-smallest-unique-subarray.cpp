@@ -35,8 +35,6 @@ public:
 
         while(l + 1 < r){
             int m = (l + r) / 2;
-            
-            cout << l << ' ' << m << ' ' << r << '\n';
 
             if(is_identical(m, nums)) r = m;
             else l = m;
