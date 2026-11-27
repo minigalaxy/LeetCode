@@ -21,8 +21,10 @@ public:
         int dp[1'001][1'501] = { 0, };
 
         for(int i = 1; i <= free.size(); ++i)
-            for(int j = 0; j <= budget; ++j)
-                dp[i][j] = max(dp[i - 1][j], (j + free[i - 1].second <= budget) ? dp[i - 1][j + free[i - 1].second] + free[i - 1].first : 0);
+            for(int j = 0; j <= budget; ++j){
+                dp[i][j] = max(dp[i][j], dp[i - 1][j]);
+                if(j + free[i - 1].second <= budget) dp[i][j] = max(dp[i][j], dp[i - 1][j + free[i - 1].second] + free[i - 1].first);
+            }
 
         int res = 0;
 
